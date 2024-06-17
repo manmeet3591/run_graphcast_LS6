@@ -32,7 +32,6 @@ def task(year,device_index):
                     data_source=data_source,
                     time=time,
                 )
-                torch.cuda.synchronize(torch.device(f'cuda:{device_index}'))
                 torch.cuda.empty_cache()
                 # Convert the output to a dataset and save it to a NetCDF file
                 name = f"graphcast_{year}_{month}_{day}.nc"
