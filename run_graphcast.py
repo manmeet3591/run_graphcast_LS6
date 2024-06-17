@@ -3,7 +3,7 @@ from earth2mip.networks import get_model
 from earth2mip.initial_conditions import cds
 from earth2mip.inference_ensemble import run_basic_inference
 import os
-import shutil  # for removing non-empty directories
+import shutil
 import torch
 import sys
 
