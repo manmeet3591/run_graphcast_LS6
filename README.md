@@ -6,3 +6,5 @@ Install earth2mip and graphcast from Git Hub to a new conda environment and name
 You should have cdsapi credentials in your home directory.
 
 Submit the job script, and make sure you edit the file to match your project and email. You can train using A100 as well, just change the queue to A100.
+
+Change cache directory from home, otherwise your home directory will become full and the run stops.
