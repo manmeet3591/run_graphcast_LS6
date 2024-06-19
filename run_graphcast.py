@@ -18,7 +18,7 @@ def task(year,device_index):
     # Create the data source
     data_source = cds.DataSource(time_loop.in_channel_names)
 
-    # Loop through the months and days of the year 2023
+    # Loop through the months and days of the year
     for month in range(1, 13):
         for day in range(1, 32):
             try:
