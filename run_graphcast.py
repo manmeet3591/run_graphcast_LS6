@@ -34,7 +34,7 @@ def task(year,device_index):
                 )
                 torch.cuda.empty_cache()
                 # Convert the output to a dataset and save it to a NetCDF file
-                name = f"graphcast_{year}_{month}_{day}.nc"
+                name = f"graphcast_{year}_{month:02d}_{day:02d}.nc"
                 ds = ds.to_dataset('channel')
                 ds.to_netcdf(name)
                 print(f"Saved dataset to {name}")
